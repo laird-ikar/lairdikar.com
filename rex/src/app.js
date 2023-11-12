@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import { interaction } from "./interaction.js";
+import { VerifyDiscordRequest } from "./verify.js";
 
 const app = express();
 const PORT = process.env.REX_PORT || 3000;
