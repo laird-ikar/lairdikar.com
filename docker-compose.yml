@@ -11,22 +11,14 @@ services:
     api:
         container_name: api
         build: api/
-        volumes:
-            - ssl:/etc/ssl
         env_file: .env
     rex:
         container_name: rex
         build: rex/
-        volumes:
-            - ssl:/etc/ssl
         env_file: .env
     www:
         container_name: www
         build: www/
-        ports:
-            - "8080:80"
-        volumes:
-            - ssl:/etc/ssl
         env_file: .env
 
 volumes:
