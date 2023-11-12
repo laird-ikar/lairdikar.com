@@ -1,3 +1,4 @@
+cd /home/pi/Server
 logfile=/home/pi/lairdikar.com.log
 echo >> $logfile
 date >> $logfile
