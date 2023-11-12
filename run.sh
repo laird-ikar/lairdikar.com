@@ -1,4 +1,4 @@
-if git pull | grep -q 'Already up-to-date.'; then
+if git pull | grep -q 'Already up to date.'; then
 	echo "No changes."
 else
 	echo "Changes found."
