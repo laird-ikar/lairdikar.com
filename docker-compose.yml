@@ -17,6 +17,12 @@ services:
         env_file: .env
         volumes:
             - ./api:/var/www
+    rex_bot:
+        container_name: rex_bot
+        build: rex_bot/
+        env_file: .env
+        volumes:
+            - ./rex_bot:/var/www
     rex:
         container_name: rex
         build: rex/

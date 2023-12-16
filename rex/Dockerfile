@@ -1,15 +1,9 @@
-FROM node:alpine
+FROM nginx
 
-WORKDIR /usr/src
-
-COPY ./package.json /usr/src/package.json
-COPY ./package-lock.json /usr/src/package-lock.json
-COPY ./app.js /usr/src/app.js
-COPY ./commands/ /usr/src/commands/
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./index.html /www/data/index.html
 
 EXPOSE 80
 EXPOSE 443
 
-RUN npm install
-
-CMD ["node", "."]
+CMD ["nginx", "-g", "daemon off;"]
