@@ -11,4 +11,4 @@ EXPOSE 443
 
 RUN npm install
 
-CMD ["npm", "start"]
+CMD ["node", "."]
