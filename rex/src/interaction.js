@@ -4,7 +4,7 @@ import { command_list } from "./commands.js";
 export const interaction = (req, res) => {
 	const { type, data } = req.body;
 
-	console.log("Interaction received:", req.type, req.body);
+	console.log("Interaction received:", req.body, type, data);
 	if (type === InteractionType.PING) {
 		return res.json({ type: InteractionResponseType.PONG });
 	}
