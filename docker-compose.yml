@@ -6,15 +6,26 @@ services:
             - "80:80"
             - "443:443"
         env_file: .env
+        volumes:
+            - ./www:/var/www
+            - ./nginx/conf.d:/etc/nginx/conf.d
+            - ./nginx/ssl:/etc/nginx/ssl
+            - ./nginx/logs:/var/log/nginx
     api:
         container_name: api
         build: api/
         env_file: .env
+        volumes:
+            - ./api:/var/www
     rex:
         container_name: rex
         build: rex/
         env_file: .env
+        volumes:
+            - ./rex:/var/www
     www:
         container_name: www
         build: www/
         env_file: .env
+        volumes:
+            - ./www:/var/www
