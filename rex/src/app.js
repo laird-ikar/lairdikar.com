@@ -6,8 +6,6 @@ import { VerifyDiscordRequest } from "./utils.js";
 const app = express();
 const PORT = process.env.REX_PORT || 80;
 
-console.log(process.env);
-
 app.use(
 	express.json({ verify: VerifyDiscordRequest(process.env.REX_PUBLIC_KEY) })
 );
