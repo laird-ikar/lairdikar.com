@@ -15,4 +15,6 @@ export const interaction = (req, res) => {
 			return command(req, res);
 		}
 	}
+
+	return res.send("Unknown interaction");
 };

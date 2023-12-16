@@ -9,13 +9,13 @@ app.use(
 	express.json({ verify: VerifyDiscordRequest(process.env.REX_PUBLIC_KEY) })
 );
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
 	res.send("rex is online");
 });
 
-app.post("/interactions", (req, res) => {
-	res.send("Some data");
-	// return interaction(req, res);
+app.post("/interactions", async (req, res) => {
+	// res.send("Some data");
+	return interaction(req, res);
 });
 
 app.listen(PORT, () => {
