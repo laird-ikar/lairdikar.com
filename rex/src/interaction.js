@@ -1,5 +1,5 @@
 import { InteractionResponseType, InteractionType } from "discord-interactions";
-import { command_list } from "./commands.js";
+import { command_list } from "./export_commands.js";
 
 export const interaction = (req, res) => {
 	const { type, data } = req.body;
