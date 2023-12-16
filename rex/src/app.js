@@ -13,8 +13,9 @@ app.get("/", (req, res) => {
 	res.send("rex is online");
 });
 
-app.post("/interactions", async function (req, res) {
-	return interaction(req, res);
+app.post("/interactions", (req, res) => {
+	res.send("Some data");
+	// return interaction(req, res);
 });
 
 app.listen(PORT, () => {
