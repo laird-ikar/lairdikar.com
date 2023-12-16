@@ -4,10 +4,14 @@ import { interaction } from "./interaction.js";
 import { VerifyDiscordRequest } from "./utils.js";
 
 const app = express();
-const PORT = process.env.REX_PORT || 3000;
+const PORT = process.env.REX_PORT || 80;
 app.use(
 	express.json({ verify: VerifyDiscordRequest(process.env.REX_PUBLIC_KEY) })
 );
+
+app.get("/", (req, res) => {
+	res.send("rex is online");
+});
 
 app.post("/interactions", async function (req, res) {
 	return interaction(req, res);
