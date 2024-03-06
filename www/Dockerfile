@@ -1,7 +1,8 @@
 FROM nginx
 
 COPY ./nginx.conf /etc/nginx/nginx.conf
-COPY ./index.html /www/data/index.html
+COPY ./www/	/www/data/
+
 
 EXPOSE 80
 EXPOSE 443
