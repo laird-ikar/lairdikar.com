@@ -5,7 +5,25 @@
 		<title>Le Goutêron</title>
 		<style>
 			body {
-				color: "#5c34ff"
+				color: yellow;
+				background-color: blueviolet;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			a {
+				color: yellowgreen;
+			}
+
+			.wrapper {
+				display: flex;
+				flex-direction: row;
+			}
+
+			img {
+				object-fit: contain;
 			}
 		</style>
 	</head>
@@ -13,66 +31,65 @@
 	<body>
 		<h1>Le Goutêron</h1>
 		<p>Vous ici ? Mais c'est ma foi incroyable !</p>
-		<p>Puisque tu passes par là, voici toutes les informations dont tu pourrais avoir besoin:
-			<ul>
-				<li>
-					Ça se passe au <a href="https://maps.app.goo.gl/67THW9kJoXdKGMzp6">1 rue des Chevaliers</a>
-				</li>
-				<li>
-					C'est le vendredi 15 mars 2024 à partir de 19 heures.
-				</li>
-				<li>
-					Si tu veux participer à la musique, on utilisera cette
-					<a href="https://open.spotify.com/playlist/50riEefBiRS01TpRwQs6dO?si=de45c4c8ca874f6c&pt=b2d0ab4447d9cf54e7b73d67bb66216b">
-						playlist Spotify
-					</a>
-				</li>
-				<li>
-					Le programme:
-					<ul>
-						<li>
-							Les Loups-Garous de Thiercelieux
-						</li>
-						<li>
-							Princess Bride
-						</li>
-						<li>
-							Les Ailes de l'enfer
-						</li>
-						<li>
-							Du fun à n'en plus finir, sens toi libre d'ajouter ce que tu veux au F.U.N.
-						</li>
-					</ul>
-				</li>
-				<li>
-					Le menu:
-					<ul>
-						<li>
-							Gâteau au chocolat
-						</li>
-						<li>
-							Glace à la vanille
-						</li>
-						<li>
-							Glace à la menthe (c'est mon anniversaire je fais ce que je veux)
-						</li>
-						<li>
-							Du pop-corn
-						</li>
-						<li>
-							Des chipsters
-						</li>
-						<li>
-							Du soda
-						</li>
-						<li>
-							Plus si affinité
-						</li>
-					</ul>
-				</li>
-			</ul>
-			S'il manque quelque chose, n'hésite pas à me demander, j'ajouterais ce qu'il manque au fur et à mesure.
+		<div class="wrapper">
+			<div>
+				Puisque tu passes par là, voici toutes les informations dont tu
+				pourrais avoir besoin:
+				<ul>
+					<li>
+						Ça se passe au
+						<a href="https://maps.app.goo.gl/67THW9kJoXdKGMzp6"
+							>1 rue des Chevaliers</a
+						>
+					</li>
+					<li>
+						C'est le vendredi 15 mars 2024 à partir de 19 heures.
+					</li>
+					<li>
+						Si tu veux participer à la musique, on utilisera cette
+						<a
+							href="https://open.spotify.com/playlist/50riEefBiRS01TpRwQs6dO?si=de45c4c8ca874f6c&pt=b2d0ab4447d9cf54e7b73d67bb66216b"
+						>
+							playlist Spotify
+						</a>
+					</li>
+				</ul>
+				S'il manque quelque chose, n'hésite pas à me demander,
+				j'ajouterais ce qu'il manque au fur et à mesure.
+			</div>
+			<img
+				width="auto"
+				height="auto"
+				src="https://ih1.redbubble.net/image.1814310430.2525/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+			/>
+			<div>
+				<h2>Le programme:</h2>
+				<ul>
+					<li>Les Loups-Garous de Thiercelieux</li>
+					<li>Princess Bride</li>
+					<li>Les Ailes de l'enfer</li>
+					<li>
+						Du fun à n'en plus finir, sens toi libre d'ajouter ce
+						que tu veux au F.U.N.
+					</li>
+				</ul>
+				<h2>Le menu:</h2>
+				<ul>
+					<li>Gâteau au chocolat</li>
+					<li>Glace à la vanille</li>
+					<li>
+						Glace à la menthe (c'est mon anniversaire je fais ce que
+						je veux)
+					</li>
+					<li>Du pop-corn</li>
+					<li>Des chipsters</li>
+					<li>Du soda</li>
+					<li>Plus si affinité</li>
+				</ul>
+			</div>
+		</div>
+		<p style="font-size: xx-small">
+			Oui c'est encfore un peu moche, promis je fais du CSS <u>demain</u>.
 		</p>
-		<p style="font-size: xx-small;">Oui c'est moche, promis je fais du CSS demain.</p>
 	</body>
 </html>
