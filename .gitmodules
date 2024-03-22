@@ -1,0 +1,3 @@
+[submodule "cmetg"]
+	path = cmetg
+	url = git@github.com:laird-ikar/cmetg.lairdikar.com.git

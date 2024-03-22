@@ -3,7 +3,7 @@ logfile=/home/laird_ikar/lairdikar.com.log
 echo >> $logfile
 date >> $logfile
 pwd >> $logfile
-if git pull | grep -q 'Already up to date.'; then
+if git pull --recurse-submodules | grep -q 'Already up to date.'; then
 	echo "No changes." >> $logfile
 else
 	echo "Changes found." >> $logfile
