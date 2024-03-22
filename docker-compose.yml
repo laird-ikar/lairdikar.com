@@ -17,6 +17,12 @@ services:
         env_file: .env
         volumes:
             - ./api:/var/www
+    cmetg:
+        container_name: cmetg
+        build: cmetg/
+        env_file: .env
+        volumes:
+            - ./cmetg:/var/www
     rex_bot:
         container_name: rex_bot
         build: rex_bot/
